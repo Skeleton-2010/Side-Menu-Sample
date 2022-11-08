@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+}
+body {
+  background-color: #080808;
+}
+.Left-Menu {
+  height: 100vh;
+  width: 20vw;
+  position: absolute;
+  left: 0px;
+  background-color: #161616;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.Menu-Content {
+  width: 88%;
+  height: 48%;
+}
+.Menu-Customization {
+  width: 88%;
+  height: 24%;
+}
+.Text-Content {
+  font-size: 16px;
+  color: #969696;
+}
+.Menu-Button {
+  width: 100%;
+  height: 36px;
+  background-color: #161616;
+  border-radius: 48px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  transition: 0.1s;
+  margin-top: 12px;
+}
+.Menu-Button:hover {
+  background-color: #323232;
+}
+.Button-Image {
+  width: 32px;
+  height: 32px;
+  margin-right: 8px;
+  margin-left: 12%;
+}
+.Button-Text {
+  font-size: 20px;
+  color: #969696;
+  margin-left: 8px;
+  margin-right: 48px;
+}
+.New-Counter {
+  display: inline-block;
+  font-size: 12px;
+  padding: 1px 4px;
+  background-color: #0080ff;
+  color: #ffffff;
+  border-radius: 12px;
+  margin-left: 8px;
+}
+@media (max-width: 950px) {
+  .Left-Menu {
+    height: 36vh;
+    width: 100vw;
+    top: 0px;
+    background-color: #161616;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .Menu-Customization {
+    width: 48%;
+    height: 96%;
+  }
+  .Menu-Content {
+    width: 48%;
+    height: 96%;
+  }
+}
+@media (max-width: 350px) {
+  .Button-Text {
+    font-size: 16px;
+    margin-left: 4px;
+  }
+  .Button-Image {
+    width: 24px;
+    height: 24px;
+    margin-right: 4px;
+  }
+}
